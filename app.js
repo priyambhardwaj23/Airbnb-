@@ -61,7 +61,7 @@ store.on("error",()=>{
 })
 const sessionOptions = {
     store,
-    secret: process.env.SECRET,
+    secret: "mysupersecretcode",
     resave: false,
     saveUninitialized: true,
     cookie: {
@@ -104,4 +104,5 @@ app.listen(8080, (req, res) => {
     console.log('Server is running on port 8080');
 
 });
+
 
